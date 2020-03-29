@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin_ndn.Services;
@@ -14,7 +15,9 @@ namespace Xamarin_ndn
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+            //mainpage를 navigationpage로 지정
             MainPage = new MainPage();
+            
         }
 
         protected override void OnStart()
